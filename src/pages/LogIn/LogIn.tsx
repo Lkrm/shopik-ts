@@ -1,6 +1,10 @@
 import React from 'react';
-import { AuthLayout } from '../../components';
+import { AuthLayout, Form } from '../../components';
 
-const LogIn = () => <AuthLayout><h3>LogIn</h3></AuthLayout>;
+const LogIn = () => <AuthLayout>
+    <Form handleSubmit={() => {}}>
+        <Form.Input/>
+    </Form>
+</AuthLayout>;
 
 export default LogIn;
