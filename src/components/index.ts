@@ -1,9 +1,5 @@
 import App from './App/App';
 import AuthLayout from './AuthLayout/AuthLayout';
-import Form from './Form/';
+import Button from './Button/Button';
 
-export {
-    App,
-    AuthLayout,
-    Form,
-}
+export { App, AuthLayout, Button };

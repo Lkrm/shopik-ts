@@ -5,7 +5,9 @@ type AuthLayoutProps = {
 }
 const AuthLayout = ({ children }: AuthLayoutProps) => (
     <div className="page-auth">
-        {children}
+        <div className="container">
+            {children}
+        </div>
     </div>
 );
 
