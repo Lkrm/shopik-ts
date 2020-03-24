@@ -1,0 +1,31 @@
+$greenColor: #38b144
+
+.checkbox
+  &__input
+    display: none
+    &:checked ~ .checkbox__pseudo
+      background-color: $greenColor
+      &::before
+        content: "\ea10"
+        position: absolute
+        top: 50%
+        margin-top: -6px
+        left: 50%
+        margin-left: -4px
+        font-family: icomoon
+        color: #ffd
+        font-size: 8px
+  &__pseudo
+    position: relative
+    width: 18px
+    height: 18px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0
+    box-sizing: border-box
+    border: 1px solid #cecece
+    border-radius: 4px
+    cursor: pointer
+    &:hover
+      background-color: #fafafa

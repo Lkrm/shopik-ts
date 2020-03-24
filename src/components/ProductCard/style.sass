@@ -1,0 +1,64 @@
+$greenColor: #38b144
+
+
+.product-card
+  position: relative
+  margin: 4px 0
+  padding: 8px
+  box-sizing: border-box
+  border: 1px solid transparent
+  background-color: #fff
+  transition-duration: .25s
+  &:hover
+    border: 1px solid #eee
+    transform: scale(1.1, 1.1)
+    box-shadow: 0 0 9px rgba(135, 135, 135, 0.53)
+    z-index: 2
+  &__title
+    font-size: 18px
+    line-height: 1.3em
+    border-bottom: 1px solid #eee
+  &__button-buy
+    display: flex
+    align-items: center
+    box-sizing: border-box
+    padding: 4px 8px
+    border-radius: 8px
+    cursor: pointer
+    border: 1px solid $greenColor
+    background-color: $greenColor
+    transition-duration: 1s
+    font-size: 14px
+    color: #fff
+    &:hover
+      box-shadow: inset 0 0 2px rgba(51, 51, 51, 0.53)
+    &:active
+      box-shadow: inset 0 0 5px rgba(16, 74, 25, 0.53)
+    span
+      margin-right: 8px
+  &__footer
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-top: 1px solid #eee
+    padding-top: 8px
+  &__price
+    font-size: 14px
+  &__product-info
+    width: 100%
+    height: calc(1.4em * 5 - 8px)
+    padding: 4px
+    list-style: none
+    font-size: 14px
+    line-height: 1.4em
+    overflow: hidden
+    transition-duration: .15s
+  &__item
+    margin-bottom: 4px
+    span:first-child
+      margin-right: 4px
+  &__image-wrap
+    border: 1px solid #eee
+  &__image
+    max-width: 100%

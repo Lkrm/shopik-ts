@@ -1,0 +1,27 @@
+$greenColor: #38b144
+
+.search-group
+  width: 100%
+  display: flex
+  align-items: center
+  &__input
+    height: 32px
+  &__button
+    display: flex
+    align-items: center
+    box-sizing: border-box
+    padding: 4px 8px
+    border-radius: 8px
+    cursor: pointer
+    border: 1px solid $greenColor
+    background-color: $greenColor
+    transition-duration: 1s
+    font-size: 14px
+    color: #fff
+    margin-left: 8px
+    &:hover
+      box-shadow: inset 0 0 2px rgba(51, 51, 51, 0.53)
+    &:active
+      box-shadow: inset 0 0 5px rgba(16, 74, 25, 0.53)
+    span
+      margin-right: 8px

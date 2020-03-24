@@ -8,14 +8,27 @@ type InputProps = {
     required?: boolean | false,
     disabled?: boolean | false
     label: string,
+    error?: string | '',
+    value?: string | '',
 };
 
 const Input = ({ className, handleChange, name,
-                   label, type, required, disabled }: InputProps) => (
+                   label, type,
+                   required,
+                   disabled,
+               value,
+               error,}: InputProps) => (
         <div className={`form-group ${className}`}>
             <label htmlFor="exampleFormControlInput1">{label}</label>
-            <input className="field-group__input form-control"
-                   onChange={handleChange} name={name} type={type} required={required} disabled={disabled}/>
+            <input className={`field-group__input form-control has-error`}
+                   onChange={handleChange}
+                   name={name}
+                   type={type}
+                   required={required}
+                   disabled={disabled}
+                   value={value}
+            />
+            <small className="error">{error}</small>
         </div>
 );
 
